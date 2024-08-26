@@ -22,7 +22,7 @@ public class Menu {
                 System.out.println("4. Buscar persona");
                 System.out.println("0. Salir");
                 opcion = scanner.nextInt();
-                scanner.nextLine();  // Consumir la nueva línea
+                scanner.nextLine();  
                 
                 switch (opcion) {
                     case 1 -> {
@@ -42,7 +42,7 @@ public class Menu {
                         } else {
                             System.out.println("Índice inválido.");
                         }
-                        scanner.nextLine();  // Consumir la nueva línea
+                        scanner.nextLine();  
                     }
                         
                     case 3 -> System.out.println("Lista de personas: " + personas);
