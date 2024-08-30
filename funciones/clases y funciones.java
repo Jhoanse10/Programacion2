@@ -41,7 +41,7 @@ public class Clientes {
     
     public void imprimirMensaje() {
         int edad = calcularEdad();
-        String mensaje = String.format("Mi nombre es %s %s y vivo en %s y tengo %d años de edad",
+        String mensaje = String.format("Mi nombre es y vivo en  y tengo  años de edad",
                 nombre, apellido, direccion, edad);
         System.out.println(mensaje);
     }
@@ -51,12 +51,12 @@ public class Clientes {
         
         Clientes cliente = new Clientes(
                 "123456789",
-                "Juan",
-                "Pérez",
-                "555-1234",
-                "juan.perez@example.com",
-                "Calle Falsa 123",
-                "1990/05/15"
+                "Jhoan",
+                "Diaz",
+                "5555-5555",
+                "johanse10@hotmail.com",
+                "san jose de los campanos",
+                "1998/08/21"
         );
 
         
