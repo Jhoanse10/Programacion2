@@ -31,7 +31,7 @@ class Clientes:
         
         return edad
 
-cliente = Clientes("1143377081", "Neil", "Pereira", "3046392755", "neil.pereira.robles@gmail.com", "cr59 Barrio Chiquinquirá", "1994/07/28")
+cliente = Clientes("1143377081", "Jhoan", "Diaz", "3022922606", "johanse10@hotmail.com", "san jose de los campanos", "1998/08/21")
 
 edad = cliente.calcular_edad()
 mensaje = f"Mi nombre es {cliente.nombre} {cliente.apellido} y vivo en {cliente.direccion} y tengo {edad} años de edad"
