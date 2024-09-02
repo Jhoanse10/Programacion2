@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Clase base Persona
 class Persona {
     private String nombre;
     private String apellido;
@@ -8,7 +7,7 @@ class Persona {
     private String telefono;
     private String email;
 
-    // Constructor de la clase Persona
+   
     public Persona(String nombre, String apellido, String direccion, String telefono, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -17,7 +16,7 @@ class Persona {
         this.email = email;
     }
 
-    // Métodos getter y setter para nombre
+   
     public String getNombre() {
         return nombre;
     }
@@ -26,7 +25,7 @@ class Persona {
         this.nombre = nombre;
     }
 
-    // Métodos getter y setter para apellido
+    
     public String getApellido() {
         return apellido;
     }
@@ -35,7 +34,7 @@ class Persona {
         this.apellido = apellido;
     }
 
-    // Métodos getter y setter para dirección
+    
     public String getDireccion() {
         return direccion;
     }
@@ -44,7 +43,7 @@ class Persona {
         this.direccion = direccion;
     }
 
-    // Métodos getter y setter para teléfono
+    
     public String getTelefono() {
         return telefono;
     }
@@ -53,7 +52,7 @@ class Persona {
         this.telefono = telefono;
     }
 
-    // Métodos getter y setter para email
+    
     public String getEmail() {
         return email;
     }
@@ -63,14 +62,14 @@ class Persona {
     }
 }
 
-// Clase derivada Empleado que hereda de Persona
+
 class Empleado extends Persona {
     private String nombreCargo;
     private double salario;
     private String jefeInmediato;
     private int ahosExperiencia;
 
-    // Constructor de la clase Empleado
+    
     public Empleado(String nombre, String apellido, String direccion, String telefono, String email,
                     String nombreCargo, double salario, String jefeInmediato, int ahosExperiencia) {
         super(nombre, apellido, direccion, telefono, email);
@@ -80,7 +79,7 @@ class Empleado extends Persona {
         this.ahosExperiencia = ahosExperiencia;
     }
 
-    // Métodos getter y setter para nombreCargo
+    
     public String getNombreCargo() {
         return nombreCargo;
     }
@@ -89,7 +88,7 @@ class Empleado extends Persona {
         this.nombreCargo = nombreCargo;
     }
 
-    // Métodos getter y setter para salario
+    
     public double getSalario() {
         return salario;
     }
@@ -98,7 +97,6 @@ class Empleado extends Persona {
         this.salario = salario;
     }
 
-    // Métodos getter y setter para jefeInmediato
     public String getJefeInmediato() {
         return jefeInmediato;
     }
@@ -107,7 +105,6 @@ class Empleado extends Persona {
         this.jefeInmediato = jefeInmediato;
     }
 
-    // Métodos getter y setter para ahosExperiencia
     public int getAhosExperiencia() {
         return ahosExperiencia;
     }
@@ -117,12 +114,10 @@ class Empleado extends Persona {
     }
 }
 
-// Clase principal para ejecutar el programa
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar datos al usuario
         System.out.print("Ingrese el nombre: ");
         String nombre = scanner.nextLine();
         
@@ -144,7 +139,7 @@ public class Main {
         System.out.print("Ingrese el salario: ");
         double salario = scanner.nextDouble();
         
-        scanner.nextLine(); // Limpiar el buffer del scanner
+        scanner.nextLine(); 
         
         System.out.print("Ingrese el jefe inmediato: ");
         String jefeInmediato = scanner.nextLine();
@@ -152,10 +147,8 @@ public class Main {
         System.out.print("Ingrese los ahos de experiencia: ");
         int ahosExperiencia = scanner.nextInt();
 
-        // Crear instancia de Empleado
         Empleado empleado = new Empleado(nombre, apellido, direccion, telefono, email, nombreCargo, salario, jefeInmediato, ahosExperiencia);
 
-        // Validar salario y experiencia
         if (salario > 5000000 && ahosExperiencia < 5) {
             System.out.println("Error: Un empleado con salario superior a $5.000.000 debe tener al menos 5 años de experiencia.");
         } else if (salario >= 900000 && salario <= 1200000 && ahosExperiencia < 1) {
@@ -164,6 +157,6 @@ public class Main {
             System.out.println("Empleado registrado correctamente.");
         }
         
-        scanner.close(); // Cerrar el scanner
+        scanner.close(); 
     }
 }
