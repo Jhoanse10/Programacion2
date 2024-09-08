@@ -6,15 +6,15 @@ class Usuario:
         self.tipo = tipo
         self.fecha_creacion = fecha_creacion
 
-    # Retorna los datos del usuario en formato amigable
+    
     def __str__(self):
         return (f"Nombre Completo: {self.nombre_completo}\nNickname: {self.nickname}\n"
                 f"Clave: {self.clave}\nTipo: {self.tipo}\nFecha de Creación: {self.fecha_creacion}")
 
-# Diccionario global para almacenar usuarios
+
 usuarios = {}
 
-# Función para agregar usuario
+
 def agregar_usuario():
     nombre_completo = input("Ingrese el nombre completo: ")
     nickname = input("Ingrese el nickname: ")
@@ -26,7 +26,7 @@ def agregar_usuario():
     usuarios[nickname] = usuario
     print("Usuario agregado exitosamente.\n")
 
-# Función para buscar un usuario por su nickname
+
 def buscar_usuario():
     nickname = input("Ingrese el nickname del usuario a buscar: ")
     usuario = usuarios.get(nickname)
@@ -35,7 +35,7 @@ def buscar_usuario():
     else:
         print("Usuario no encontrado.")
 
-# Función para eliminar un usuario por su nickname
+
 def eliminar_usuario():
     nickname = input("Ingrese el nickname del usuario a eliminar: ")
     if usuarios.pop(nickname, None):
@@ -43,7 +43,7 @@ def eliminar_usuario():
     else:
         print("Usuario no encontrado.")
 
-# Menú principal
+
 def menu():
     while True:
         print("\nMenú:")
@@ -65,6 +65,6 @@ def menu():
         else:
             print("Opción inválida.")
 
-# Ejecutar el menú
+
 if __name__ == "__main__":
     menu()
