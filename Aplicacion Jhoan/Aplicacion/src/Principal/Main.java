@@ -10,7 +10,7 @@ import Ventanas.FrmAdminCategoria;
 import Ventanas.FrmProductos;
 /**
  *
- * @author el_ja
+ * 
  */
 public class Main {
 
