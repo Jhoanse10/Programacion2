@@ -23,12 +23,12 @@ public class Estudiantes {
     
     public Estudiantes(){
    
-    Est.put("Cedula", "12345678");
-    Est.put("Nombre", "javier");
-    Est.put("Apellido", "salcedo");
-    Est.put("Direccion", "el pozon");
-    Est.put("Telefono", "3013362472");
-    Est.put("Clave", "jas123");
+    Est.put("Cedula", "73227567");
+    Est.put("Nombre", "Jhoan Sebastian");
+    Est.put("Apellido", "Diaz Castro");
+    Est.put("Direccion", "San Jose de los campanos");
+    Est.put("Telefono", "3022922606");
+    Est.put("Clave", "Jhoanse2024.");
         
     }
     
